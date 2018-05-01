@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		04A6322720940297009A4E76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6322620940297009A4E76 /* main.m */; };
+		04A632342097EBA6009A4E76 /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A632332097EBA6009A4E76 /* Apple.m */; };
+		04A6323720980AEE009A4E76 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6323620980AEE009A4E76 /* ListNode.m */; };
+		04A6323A20980B96009A4E76 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6323920980B96009A4E76 /* TreeNode.m */; };
+		04A6323D20980C20009A4E76 /* Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6323C20980C20009A4E76 /* Interval.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		04A6322320940297009A4E76 /* Algorithm_OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm_OC; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A6322620940297009A4E76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04A632322097EBA6009A4E76 /* Apple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
+		04A632332097EBA6009A4E76 /* Apple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
+		04A6323520980AEE009A4E76 /* ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		04A6323620980AEE009A4E76 /* ListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
+		04A6323820980B96009A4E76 /* TreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		04A6323920980B96009A4E76 /* TreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
+		04A6323B20980C20009A4E76 /* Interval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interval.h; sourceTree = "<group>"; };
+		04A6323C20980C20009A4E76 /* Interval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Interval.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,33 @@
 		04A6322520940297009A4E76 /* Algorithm_OC */ = {
 			isa = PBXGroup;
 			children = (
+				04A6322E2094BA1B009A4E76 /* Apple */,
+				04A6322D2094BA00009A4E76 /* Common */,
 				04A6322620940297009A4E76 /* main.m */,
 			);
 			path = Algorithm_OC;
+			sourceTree = "<group>";
+		};
+		04A6322D2094BA00009A4E76 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04A6323520980AEE009A4E76 /* ListNode.h */,
+				04A6323620980AEE009A4E76 /* ListNode.m */,
+				04A6323820980B96009A4E76 /* TreeNode.h */,
+				04A6323920980B96009A4E76 /* TreeNode.m */,
+				04A6323B20980C20009A4E76 /* Interval.h */,
+				04A6323C20980C20009A4E76 /* Interval.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		04A6322E2094BA1B009A4E76 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				04A632322097EBA6009A4E76 /* Apple.h */,
+				04A632332097EBA6009A4E76 /* Apple.m */,
+			);
+			path = Apple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A632342097EBA6009A4E76 /* Apple.m in Sources */,
+				04A6323720980AEE009A4E76 /* ListNode.m in Sources */,
+				04A6323D20980C20009A4E76 /* Interval.m in Sources */,
 				04A6322720940297009A4E76 /* main.m in Sources */,
+				04A6323A20980B96009A4E76 /* TreeNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

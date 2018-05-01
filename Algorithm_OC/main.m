@@ -7,11 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Apple.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        Apple *apple = [[Apple alloc] init];
+        
+        // 238. Product of Array Except Self
+//        NSArray *arr = [NSArray arrayWithObjects:@(1), @(2), @(3), @(4), nil];
+//        NSMutableArray *res = [apple productExceptSelf:arr];
+//        NSLog(@"res:%@",res);
+        
+        // 1. Two Sum
+//        NSArray *arr = @[@(2), @(7), @(11), @(15)];
+//        NSArray *res = [apple twoSum:arr target:9];
+//        NSLog(@"res:%@", res);
     }
     return 0;
 }

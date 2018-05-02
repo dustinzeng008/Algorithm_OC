@@ -55,4 +55,55 @@
     }
     return dummy.next;
 }
+
+// 42. Trapping Rain Water
+- (NSInteger)trap:(NSArray *)height {
+    if (height == nil || height.count == 0) {
+        return 0;
+    }
+    NSInteger left = 0, right = height.count - 1;
+    NSInteger maxLeft = 0, maxRight = 0;
+    NSInteger sum = 0;
+    while (left <= right) {
+        if (maxLeft <= maxRight) {
+            if ([height[left] intValue] >= maxLeft) {
+                maxLeft = [height[left] intValue];
+            } else {
+                sum += maxLeft - [height[left] intValue];
+            }
+            left++;
+        } else {
+            if ([height[right] intValue] >= maxRight) {
+                maxRight = [height[right] intValue];
+            } else {
+                sum += maxRight - [height[right] intValue];
+            }
+            right--;
+        }
+    }
+    return sum;
+}
+
+// 48. Rotate Image
+- (void)rotate:(NSMutableArray *)matrix{
+    if(matrix == nil || matrix.count == 0) {
+        return;
+    }
+    NSInteger m = matrix.count;
+    NSInteger n = [matrix[0] count];
+    for (NSInteger i = 0; i < m; i++) {
+        for (NSInteger j = i; j < n; j++) {
+            NSNumber *tmp = matrix[i][j];
+            matrix[i][j] = matrix[j][i];
+            matrix[j][i] = tmp;
+        }
+    }
+    for (NSInteger i = 0; i < m; i++) {
+        for (NSInteger j = 0; j < n/2; j++) {
+            NSNumber *tmp = matrix[i][j];
+            matrix[i][j] = matrix[i][n-1-j];
+            matrix[i][n-1-j] = tmp;
+        }
+    }
+}
 @end

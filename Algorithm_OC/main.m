@@ -14,6 +14,18 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         Apple *apple = [[Apple alloc] init];
         
+        NSMutableArray *arr = [@[
+                                [@[@(1), @(2), @(3)] mutableCopy],
+                                [@[@(4), @(5), @(6)] mutableCopy],
+                                [@[@(7), @(8), @(9)] mutableCopy]
+                                ] mutableCopy];
+        [apple rotate:arr];
+        NSLog(@"res:%@", arr);
+        // 42. Trapping Rain Water
+//        NSArray *arr = [NSArray arrayWithObjects:@(0), @(1), @(0), @(2), @(1), @(0), @(1), @(3), @(2), @(1), @(2), @(1),nil];
+//        NSInteger res = [apple trap:arr];
+//        NSLog(@"res:%ld", (long)res);
+        
         // 238. Product of Array Except Self
 //        NSArray *arr = [NSArray arrayWithObjects:@(1), @(2), @(3), @(4), nil];
 //        NSMutableArray *res = [apple productExceptSelf:arr];

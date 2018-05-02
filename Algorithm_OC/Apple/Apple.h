@@ -21,4 +21,10 @@
 
 // 206. Reverse Linked List
 - (ListNode *)reverseList:(ListNode *)head;
+
+// 42. Trapping Rain Water
+- (NSInteger)trap:(NSArray *)height;
+
+// 48. Rotate Image
+- (void)rotate:(NSArray *)matrix;
 @end
